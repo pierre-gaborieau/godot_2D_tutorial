@@ -42,7 +42,10 @@ script = ExtResource("1_esl2b")
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_i7iey")
 animation = &"UP"
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_3jmn4")
 metadata/_edit_group_ = true
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]
